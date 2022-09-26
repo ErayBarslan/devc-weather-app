@@ -2,7 +2,6 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { vars } from '../styles/Global'
 import { TiLocationArrow } from 'react-icons/ti'
-import LoadEffect from './LoadEffect'
 
 const MainToday = ({ currentData }) => {
   const commaMiles = (currentData?.visibility / 1609).toFixed(1).replace(".", ",")
@@ -15,7 +14,7 @@ const MainToday = ({ currentData }) => {
   return (
     <ThemeProvider theme={theme}>
       <StyledContainer>
-        <h1>Today's Highlights</h1>
+        <h1>Today&apos;s Highlights</h1>
         <div className="highlights-container">
           <div className="highlight-card">
             <h2>Wind Status</h2>
