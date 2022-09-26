@@ -40,7 +40,7 @@ export default function Home({ API_KEY }) {
     else {
       try {
         setLoading(true)
-        const res = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`)
+        const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`)
         const data = await res.json()
         const res2 = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${data[0].lat}&lon=${data[0].lon}&appid=${API_KEY}`)
         const data2 = await res2.json()
