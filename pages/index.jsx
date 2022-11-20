@@ -18,7 +18,7 @@ export default function Home({ API_KEY }) {
 
   const [currentData, setCurrentData] = useState(null)
   const [forecastData, setForecastData] = useState(null)
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   const fetchData = async () => {
     if (!city) {
